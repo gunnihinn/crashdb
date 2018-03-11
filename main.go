@@ -3,6 +3,7 @@ package main
 import (
 	"encoding/json"
 	"fmt"
+	"log"
 	"net/http"
 )
 
@@ -25,22 +26,22 @@ func main() {
 			req := Request{}
 			err := dec.Decode(&req)
 			if err != nil {
-				panic(err)
+				panic("User error")
 			}
 
 			val, ok := db[req.Key]
 			if !ok {
-				panic(fmt.Sprintf("Key '%s' not in DB", req.Key))
+				panic("User error")
 			}
 
 			resp, err := json.Marshal(val)
 			if err != nil {
-				panic(err)
+				panic("User error")
 			}
 
 			_, err = w.Write(resp)
 			if err != nil {
-				panic(err)
+				panic("User error")
 			}
 
 		case "POST":
@@ -48,15 +49,15 @@ func main() {
 			req := Request{}
 			err := dec.Decode(&req)
 			if err != nil {
-				panic(err)
+				panic("User error")
 			}
 
 			db[req.Key] = req.Value
 
 		default:
-			panic(fmt.Sprintf("HTTP method %s not supported", r.Method))
+			panic("User error")
 		}
 	})
 
-	http.ListenAndServe(":8080", nil)
+	log.Fatal(http.ListenAndServe(":8080", nil))
 }
