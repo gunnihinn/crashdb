@@ -14,7 +14,7 @@ CrashDB is an ephemeral NoSQL database for the confident developer.
 For privacy and security, CrashDB does not provide methods that reveal what
 keys are currently stored in the database.
 
-![That's a paddlin'][https://www.github.com/gunnihinn/crashdb/crashdb.jpg]
+![That's a paddlin'](https://raw.githubusercontent.com/gunnihinn/crashdb/master/crashdb.jpg)
 
 ## Run
 
