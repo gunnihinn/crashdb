@@ -1,0 +1,104 @@
+POST http://127.0.0.1:8080/
+$ {"Key": "foo", "Value": "spam"}
+POST http://127.0.0.1:8080/
+$ {"Key": "bar", "Value": "eggs"}
+GET http://127.0.0.1:8080/
+$ {"Key": "foo"}
+GET http://127.0.0.1:8080/
+$ {"Key": "bar"}
+GET http://127.0.0.1:8080/
+$ {"Key": "foo"}
+GET http://127.0.0.1:8080/
+$ {"Key": "bar"}
+GET http://127.0.0.1:8080/
+$ {"Key": "foo"}
+GET http://127.0.0.1:8080/
+$ {"Key": "bar"}
+GET http://127.0.0.1:8080/
+$ {"Key": "foo"}
+GET http://127.0.0.1:8080/
+$ {"Key": "bar"}
+GET http://127.0.0.1:8080/
+$ {"Key": "foo"}
+GET http://127.0.0.1:8080/
+$ {"Key": "bar"}
+GET http://127.0.0.1:8080/
+$ {"Key": "foo"}
+GET http://127.0.0.1:8080/
+$ {"Key": "bar"}
+GET http://127.0.0.1:8080/
+$ {"Key": "foo"}
+GET http://127.0.0.1:8080/
+$ {"Key": "bar"}
+GET http://127.0.0.1:8080/
+$ {"Key": "foo"}
+GET http://127.0.0.1:8080/
+$ {"Key": "bar"}
+GET http://127.0.0.1:8080/
+$ {"Key": "foo"}
+GET http://127.0.0.1:8080/
+$ {"Key": "bar"}
+GET http://127.0.0.1:8080/
+$ {"Key": "foo"}
+GET http://127.0.0.1:8080/
+$ {"Key": "bar"}
+GET http://127.0.0.1:8080/
+$ {"Key": "foo"}
+GET http://127.0.0.1:8080/
+$ {"Key": "bar"}
+GET http://127.0.0.1:8080/
+$ {"Key": "foo"}
+GET http://127.0.0.1:8080/
+$ {"Key": "bar"}
+GET http://127.0.0.1:8080/
+$ {"Key": "foo"}
+GET http://127.0.0.1:8080/
+$ {"Key": "bar"}
+GET http://127.0.0.1:8080/
+$ {"Key": "foo"}
+GET http://127.0.0.1:8080/
+$ {"Key": "bar"}
+GET http://127.0.0.1:8080/
+$ {"Key": "foo"}
+GET http://127.0.0.1:8080/
+$ {"Key": "bar"}
+GET http://127.0.0.1:8080/
+$ {"Key": "foo"}
+GET http://127.0.0.1:8080/
+$ {"Key": "bar"}
+GET http://127.0.0.1:8080/
+$ {"Key": "foo"}
+GET http://127.0.0.1:8080/
+$ {"Key": "bar"}
+GET http://127.0.0.1:8080/
+$ {"Key": "foo"}
+GET http://127.0.0.1:8080/
+$ {"Key": "bar"}
+GET http://127.0.0.1:8080/
+$ {"Key": "foo"}
+GET http://127.0.0.1:8080/
+$ {"Key": "bar"}
+GET http://127.0.0.1:8080/
+$ {"Key": "foo"}
+GET http://127.0.0.1:8080/
+$ {"Key": "bar"}
+GET http://127.0.0.1:8080/
+$ {"Key": "foo"}
+GET http://127.0.0.1:8080/
+$ {"Key": "bar"}
+GET http://127.0.0.1:8080/
+$ {"Key": "foo"}
+GET http://127.0.0.1:8080/
+$ {"Key": "bar"}
+GET http://127.0.0.1:8080/
+$ {"Key": "foo"}
+GET http://127.0.0.1:8080/
+$ {"Key": "bar"}
+GET http://127.0.0.1:8080/
+$ {"Key": "foo"}
+GET http://127.0.0.1:8080/
+$ {"Key": "bar"}
+GET http://127.0.0.1:8080/
+$ {"Key": "foo"}
+GET http://127.0.0.1:8080/
+$ {"Key": "bar"}
