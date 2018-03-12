@@ -57,7 +57,8 @@ them are aimed at treating CrashDB like a distributed system.
   [this](https://fntlnz.wtf/post/gopostmortem/) was not a part of your life
   until now. (The author notes that this only really works on Linux, as he
   sadly discovered while in the last throes of pretending that OSX was a decent
-  operating system for doing development.)
+  operating system for doing development. You can bend Docker to your will to
+  make this work on OSX. Find out how!)
 - Improve the error messages to get a better idea of what went wrong. Collect
   those error messages somewhere so you can search them.
 - Use an issue tracker - any issue tracker - to keep track of what you think is
