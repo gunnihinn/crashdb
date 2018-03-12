@@ -14,11 +14,13 @@ CrashDB is an ephemeral in-memory NoSQL database for the confident developer.
 For privacy and security, CrashDB does not provide methods that reveal what
 keys are currently stored in the database.
 
-![That's a paddlin'](https://raw.githubusercontent.com/gunnihinn/crashdb/master/crashdb.jpg)
+![That's a paddlin'](https://raw.githubusercontent.com/gunnihinn/crashdb/master/static/crashdb.jpg)
 
-## Run
+## Build
 
-    $ go run main.go
+    $ make
+
+CrashDB accepts no command-line options or arguments.
 
 ## Use
 
