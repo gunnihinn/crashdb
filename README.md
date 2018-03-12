@@ -60,7 +60,7 @@ them are aimed at treating CrashDB like a distributed system.
   operating system for doing development.)
 - Improve the error messages to get a better idea of what went wrong. Collect
   those error messages somewhere so you can search them.
-- Use an issue tracker - any issue tracker - to keep track of what you thing is
+- Use an issue tracker - any issue tracker - to keep track of what you think is
   wrong with this thing. A folder with two folders called "open" and "closed"
   and some text files under version control is a perfectly good issue tracker
   for beginners.
@@ -73,7 +73,8 @@ them are aimed at treating CrashDB like a distributed system.
   that work needs to be thrown away. Be OK with that.
 - Question some of the original design decisions. Is it really necessary to
   serialize and deserialize the values all the time? Does this add unacceptable
-  overhead for intricate keys? Is it a potential DOS vector?
+  overhead for intricate keys? Is it a potential DOS vector? Can you craft
+  key/value pairs that result in arbitrarily bad performance?
 - [Profile](https://blog.golang.org/profiling-go-programs) CrashDB. Get your
   own torture tests with sample queries that exhibit some of the problems you
   want to fix, or some of the performance characteristics of the program.
