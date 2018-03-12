@@ -1,6 +1,6 @@
 # CrashDB
 
-CrashDB is an ephemeral NoSQL database for the confident developer.
+CrashDB is an ephemeral in-memory NoSQL database for the confident developer.
 
 ## Features
 
@@ -74,4 +74,10 @@ The author recommends doing any or all of the following:
   own torture tests with sample queries that exhibit some of the problems you
   want to fix, or some of the performance characteristics of the program.
   Profile before and after fixes to see their impact.
+- Make CrashDB persistent. Figure out how and where to store its data between
+  restarts or crashes. Do you need to worry about data getting corrupted?
+- Add monitoring. CrashDB is a service, so the
+  [RED method](https://www.weave.works/blog/the-red-method-key-metrics-for-microservices-architecture/)
+  seems appropriate. Decide whether to use "push" monitoring (à la Graphite) or
+  "pull" monitoring (à la Prometheus).
 
