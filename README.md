@@ -48,7 +48,9 @@ You have to learn how to improve and debug things somehow.
 CrashDB has no shortage of problems. Discover them, fix them, and by improving
 CrashDB, improve yourself as a developer.
 
-The author recommends doing any or all of the following:
+The author recommends doing any or all of the following. Some of those points
+are aimed at making any single instance of CrashDB less terrible, and some of
+them are aimed at treating CrashDB like a distributed system.
 
 - Run `sadness.sh`. Then Google [`delve`](https://github.com/derekparker/delve)
   to find out what you're looking at.  Become sad that
@@ -82,4 +84,14 @@ The author recommends doing any or all of the following:
   [RED method](https://www.weave.works/blog/the-red-method-key-metrics-for-microservices-architecture/)
   seems appropriate. Decide whether to use "push" monitoring (à la Graphite) or
   "pull" monitoring (à la Prometheus).
+- Support alternative serialization formats. JSON is fine for some things (the
+  more you use numbers, the less fine it is), but consider binary formats like
+  Protocol buffers. Use schemas to autogenerate a client for CrashDB for at
+  least one language.
+- Run CrashDB in Docker. Now run two of them at once and setup a master/slave
+  replication chain. Direct writes to the master and reads to the slave. Do
+  service discovery for the outside world. Run three instances at once and have
+  the slaves elect a new master if the original one becomes sad. Find out why
+  Zookeeper is a thing when you try to do any of this or query the cluster from
+  the outside.
 
