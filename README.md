@@ -48,11 +48,12 @@ CrashDB, improve yourself as a developer.
 
 The author recommends doing any or all of the following:
 
-- Run `sadness.sh`. Then Google `delve` to find out what you're looking at.
-  Become sad that this was not a part of your life until now. (The author notes
-  that this only really works on Linux, as he sadly discovered, sadly, while in
-  the last throes of pretending that OSX was a decent operating system for
-  doing development.)
+- Run `sadness.sh`. Then Google [`delve`](https://github.com/derekparker/delve)
+  to find out what you're looking at.  Become sad that
+  [this](https://fntlnz.wtf/post/gopostmortem/) was not a part of your life
+  until now. (The author notes that this only really works on Linux, as he
+  sadly discovered while in the last throes of pretending that OSX was a decent
+  operating system for doing development.)
 - Improve the error messages to get a better idea of what went wrong. Collect
   those error messages somewhere so you can search them.
 - Use an issue tracker - any issue tracker - to keep track of what you thing is
@@ -66,4 +67,11 @@ The author recommends doing any or all of the following:
 - Find your own things to care about and improve CrashDB in those directions.
   Realize after weeks of work that some of those things were bad ideas and all
   that work needs to be thrown away. Be OK with that.
-- Profile. We can surely do better than this.
+- Question some of the original design decisions. Is it really necessary to
+  serialize and deserialize the values all the time? Does this add unacceptable
+  overhead for intricate keys? Is it a potential DOS vector?
+- [Profile](https://blog.golang.org/profiling-go-programs) CrashDB. Get your
+  own torture tests with sample queries that exhibit some of the problems you
+  want to fix, or some of the performance characteristics of the program.
+  Profile before and after fixes to see their impact.
+
