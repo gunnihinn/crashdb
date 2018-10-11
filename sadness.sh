@@ -28,7 +28,7 @@ fi
 
 
 echo "Killing previous crashdb instances"
-killall crashdb
+kill $(pidof crashdb)
 echo "Starting crashdb..."
 GOTRACEBACK=crash ./crashdb &
 echo -n  "Populating keys."
